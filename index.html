@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/12d884e548.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <a href="#header" id="top"><i class="fa-solid fa-circle-up"></i></a>
+    <!-- ------------Header------------  -->
+    <div id="header">
+      <div class="container">
+        <nav>
+          <i class="fa-solid fa-bars menu" onclick="openmenu()"></i>
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+        </nav>
+        <div class="header-text">
+          <h1>Hi there,<br />I'm <span>Sanya Pandey.</span></h1>
+          <span id="element"></span><br />
+          <a href="https://github.com/sanya-exe" class="github"
+            ><i class="fa-brands fa-github"></i>Github</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- ----------About--------------  -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <div class="video-container">
+              <video autoplay muted loop>
+                <source src="./Utils/bg.mp4" type="video/mp4" />
+              </video>
+              <div class="caption">
+                <p>1&nbsp;&nbsp;const <b>developer</b> = {</p>
+                <p>2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; name: "<b>Sanya Pandey</b>",</p>
+                <p>
+                  3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; role: "<b>Full Stack Developer</b>",
+                </p>
+                <p>
+                  4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; tech: ["<b>MongoDB</b>", "<b>Express</b>", "<b>React</b>", "<b>Node.js</b>"],
+                </p>
+                <p>
+                  5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; passion: "<b>Building Web Apps</b>",
+                </p>
+                <p>
+                  6&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; status: "<b>Always Learning</b>"
+                </p>
+                <pre>7&nbsp;&nbsp;};</pre>
+              </div>
+            </div>
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title"><i class="fas fa-user-alt"></i> About me</h1>
+            <p>
+              I am a Computer Science student pursuing B.Tech. from JSSATEN. I'm a full-stack MERN developer with hands-on experience building web applications. I enjoy working on both frontend and backend, learning new technologies, and building practical web projects. I have worked on several personal projects, which are available on GitHub. Feel free to explore my work and connect!
+            </p>
+            <div class="about_btn">
+              <a href="Utils/SanyaPandey Resume.pdf" download class="btn2"
+                ><i class="fa-solid fa-download"></i> Resume</a
+              >
+              <a
+                href="https://www.linkedin.com/in/sanya-pandey08/"
+                class="btn2"
+                ><i class="fa-brands fa-linkedin"></i> Linkedin</a
+              >
+              <a
+                href="https://leetcode.com/u/sanya-exe/"
+                class="btn2"
+                ><i class="fa-solid fa-code"></i>Leetcode</a
+              >
+            </div>
+
+            <div class="tab-titles">
+              <p
+                class="tab-links active-link"
+                onclick="opentab('education')"
+                id="font"
+              >
+                Education
+              </p>
+              <p
+                class="tab-links"
+                onclick="opentab('certifications')"
+                id="font"
+              >
+                Certifications
+              </p>
+            </div>
+            <div class="tab-contents active-tab" id="education">
+              <ul>
+                <li>
+                  <div class="tab_head">
+                    <span>B.Tech(CSE)</span><br />
+                    <p class="">2023-2027</p>
+                  </div>
+                  <div class="tab_head">
+                    JSS Academy of Technical Education, Noida
+                    <p>8.79</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="tab_head">
+                    <span>Intermediate</span><br />
+                    <p class="">2021-2022</p>
+                  </div>
+                  <div class="tab_head">
+                    Atamdeep Vidyalaya, Gorakhpur, UP
+                    <p>87.8%</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="certifications">
+              <ul>
+                <li>
+                  <a href="Utils/udemy.pdf" target="_blank" style="text-decoration: none; color: inherit;">
+                    <div class="tab_head"><span>Udemy Certification</span><br /></div>
+                    Web Development
+                  </a>
+                </li>
+                <li>
+                  <a href="Utils/shefi.pdf" target="_blank" style="text-decoration: none; color: inherit;">
+                    <div class="tab_head">
+                      <span>Shefi Scholar 2024</span><br />
+                    </div>
+                    Blockchain Technology
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-------------------------- Experience------------------------- -->
+
+    <section id="experience" class="experience-section">
+      <div class="container">
+        <h2 class="sub-title pro">
+          <i class="fa fa-briefcase"></i> Experience
+        </h2>
+        <div class="experience-list">
+          <div class="experience-item">
+            <h2>Microsft Mobile Innovation Lab</h2>
+            <h4>April 2024 - Present</h4>
+            <h4 class="position">Programmer</h4>
+            <ul>
+              <li>
+                <span class="bold">Mentorship: </span>Help junior students learn coding, data structures, and problem-solving skills through one-on-one guidance.
+              </li>
+              <li>
+                <span class="bold">Workshop Coordination:</span> Active member in Web Development at MMIL since 2024, conducting workshops on web development for over 200 students.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- -----------------------Skills--------------------- -->
+    <div id="skills" class="skills">
+      <div class="container">
+        <h2 class="sub-title pro">
+          <i class="fas fa-laptop-code"></i> My Skills
+        </h2>
+
+        <div class="s_container">
+          <div class="row" id="skillsContainer"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ------------------Projects-------------------  -->
+    <div id="projects">
+      <div class="container">
+        <h1 class="sub-title pro">
+          <i class="fas fa-laptop-code"></i> My Projects
+        </h1>
+        <div class="wrap">
+          <img src="Utils/left-arrow.png" id="backBtn" />
+          <div class="work-list">
+            <div class="div2">
+              <div class="work">
+                <img src="Utils/ChatHub.png" alt="WebSocket-Chat" />
+                <div class="layer">
+                  <h3>WebSocket-Chat</h3>
+                  <p>
+                    Built a real-time chat application using WebSocket technology that allows users to communicate instantly with each other. 
+                    The platform supports multiple users, real-time messaging, and a clean, responsive UI for seamless communication.
+                  </p>
+                  <a href="https://real-time-group-chat-app.vercel.app/" target="_blank"
+                    ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                      ></a>
+                </div>
+              </div>
+              <div class="work">
+                <img src="Utils/trading.png" alt="Trading-Website" />
+                <div class="layer">
+                  <h3>Trading-Website</h3>
+                  <p>
+                    Built a cryptocurrency tracking website that helps users easily check live prices, market trends, and top digital currencies in one place. 
+                    The platform is simple to use, visually clear, and designed to make understanding the crypto market easy even for beginners.
+                  </p>
+                  <a href="https://crypto-price-dashboard-08.netlify.app/" target="_blank"
+                    ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                      ></a>
+                </div>
+              </div> 
+               <div class="work">
+                <img src="Utils/dishcovery.png" alt="Dishcovery" />
+                <div class="layer">
+                  <h3>Dishcovery</h3>
+                  <p>
+                    Built a recipe discovery website that helps users find delicious dishes using the ingredients they already have. 
+                    The platform makes cooking easier by instantly suggesting meal ideas in a simple, user-friendly way, perfect for everyday home cooking.
+                  </p>
+                  <a href="https://dishcovery-recipes.netlify.app/" target="_blank"
+                    ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                      ></a>
+                </div>
+              </div>
+              </div>
+              <div class="div2 lower">
+              <div class="work">
+                <img src="Utils/assembly_endgame.png" alt="Assembly-Endgame" />
+                <div class="layer">
+                  <h3>Assembly-Endgame</h3>
+                  <p>
+                    Built an interactive word-guessing game that challenges users to think strategically while having fun. 
+                    The game provides instant feedback, clear visual cues, and engaging animations, making it enjoyable and easy to understand for players of all levels.
+                  </p>
+                  <a href="https://react-endgame-project.netlify.app/" target="_blank"
+                    ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                      ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <img src="Utils/right-arrow.png" id="nextBtn" />
+        </div>
+        <a href="https://github.com/sanya-exe" class="btn"
+          >See more<i class="fa-solid fa-circle-arrow-right"></i
+        ></a>
+      </div>
+    </div>
+
+    <!-- -----------Contact--------  -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Get in Touch</h1>
+            <p><i class="fa-solid fa-envelope"></i><a href="mailto:sanyapandey.offc@gmail.com" style="color: white;">sanyapandey.offc@gmail.com</a></p>
+            <p><i class="fa-brands fa-linkedin"></i></i><a href="https://www.linkedin.com/in/sanya-pandey08/" style="color: white;">sanya-pandey08</a></p>
+            <a href="Utils/Resume-sanya.pdf" download class="btn btn2"
+              ><i class="fa-solid fa-download"></i>Download Resume</a
+            >
+          </div>
+          <div class="contact-right">
+            <form
+              action="https://api.web3forms.com/submit"
+              method="POST"
+              autocomplete="off"
+            >
+              <input
+                type="hidden"
+                name="access_key"
+                value="4ae0979e-075d-4aea-825a-ffa64b982d50"
+              />
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Email Address"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="3"
+                placeholder="Your Message"
+              ></textarea>
+              <button class="btn btn2" type="submit">
+                <i class="fa-solid fa-paper-plane"></i>Send Message
+              </button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Made with <i class="fa-solid fa-heart"></i> by Sanya Pandey</p>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
